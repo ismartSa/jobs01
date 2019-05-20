@@ -1,0 +1,63 @@
+<header id="header">
+    <nav class="navbar navbar-default navbar-static-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand">
+                    <a href="" ng-click="move('app.home')" ><h1>Home</h1></a>
+                </div>
+            </div>
+
+                    <ul class="nav navbar-nav nav-tabs" role="tablist" style="font-size: large">
+                        <li role="presentation"><a href="" ng-click="move('app.job')">Jobs</a></li>
+                        <li role="presentation"><a href="" ng-click="move('app.users')">Users</a></li>
+                        <li role="presentation"><a href="" ng-click="move('app.order')">Order</a></li>
+                        <!--<li role="presentation"><a href="" ng-click="move('app.mten')">الادارة</a></li>-->
+                        <!--<li role="presentation"><a href="" ng-click="move('app.devices')">المشرفين</a></li>-->
+                        <!--<li role="presentation"><a href="" ng-click="move('app.custmer')">المجموعات</a></li>-->
+                    </ul>
+
+        </div><!--/.container-->
+    </nav><!--/nav-->
+</header><!--/header-->
+
+<div  ui-view="sub" style="margin-top: 30px"></div>
+<footer>
+    <div class="container">
+        <!--<div class="col-md-4  wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">-->
+             <!--معتز خوجلي :Developed by-->
+        <!--</div>-->
+        <!--<div class="col-md-2 col-md-offset-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">-->
+
+            <!--<button style="font-size: larger;" class="btn btn-default"  ng-click="openbackupmodal()">نسخ احتطياطي</button>-->
+        <!--</div>-->
+    </div>
+</footer>
+
+
+
+<!--<div ng-show="backupmodal"  class="modal-azoz">-->
+    <!--<div class="modal-azoz-iner">-->
+        <!--<button class=" btn-default close-modal" ng-click="closebackupmodal()">X</button>-->
+        <!--<div class="modal-header bg-primary text-center"  style="border-radius: 3px ; font-size: large ; font-weight: bold" >-->
+           <!--تاكيد نسخة أحتطياطية-->
+        <!--</div>-->
+        <!--<div class="modal-body">-->
+            <!--<div class="container-fluid">-->
+                <!--<div class="form-row">-->
+
+                        <!--<button type="submit" ng-click="backup()" style="font-size: 24px" class="col-md-6 btn btn-primary">نعم</button>-->
+
+                        <!--<button type="submit" ng-click="closebackupmodal()" style="font-size: 24px" class="col-md-6 btn btn-primary">لا</button>-->
+                <!--</div>-->
+
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+

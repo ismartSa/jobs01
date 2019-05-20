@@ -1,0 +1,63 @@
+<div class="services group">
+    <div class="container">
+        <table class="table table-striped table-hover">
+            <tr>
+                <th>Name user</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Tel</th>
+                <th>order job name</th>
+                <th>CV</th>
+            </tr>
+            <tr ng-repeat="one in orders">
+                <td>{{one.name}}</td>
+                <td>{{one.email}}</td>
+                <td>{{one.addr}}</td>
+                <td>{{one.tel}}</td>
+                <td>{{one.job_name}}</td>
+                <td><button class="btn btn-primary" ng-click="opencv(one)">CV</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="modal-azoz" ng-show="opcv">
+    <div class="modal-azoz-iner ccc">
+        <button class=" btn-default close-modal" ng-click="closecv()">X</button>
+        <img src="img/unkown.jpg" style="width: 100%;height: 50%" alt="">
+        <table>
+            <tr>
+                <th>Name :</th>
+                <td>{{cv.name}}</td>
+            </tr>
+            <tr><!--  `birth`, `addr`, `tel`, `descr`, `is_completed`-->
+                <th>ID number :</th>
+                <td>{{cv.id_number}}</td>
+            </tr>
+            <tr>
+                <th>Skills :</th>
+                <td>{{cv.skills}}</td>
+            </tr>
+            <tr>
+                <th>education stages :</th>
+                <td>{{cv.edu_level}}</td>
+            </tr>
+            <tr>
+                <th>Birth date :</th>
+                <td>{{cv.birth}}</td>
+            </tr>
+            <tr>
+                <th>address :</th>
+                <td>{{cv.addr}}</td>
+            </tr>
+            <tr>
+                <th>Describe :</th>
+                <td>{{cv.descr}}</td>
+            </tr>
+            <tr>
+                <th>Tel :</th>
+                <td>{{cv.tel}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
